@@ -1,222 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <h1>Welcome!</h1>
-    <p>We will learn how to use Version Control System (<strong>VCS</strong>). I will be using <strong>Git</strong> for this tutorial.</p>
-    <hr>
-    <h3>Who should use Git?</h3>
-    <p>You do not have to be a programmer to use Git. Anyone who works on projects and wants to maintain its different 
-       versions, can use <br> 
-       <ul>
-            You may be
-           <li>A writer who writes stories or books.</li>
-           <li>A programmer </li>
-           <li>A Student</li>
-           <li>or Anyone</li>
-       </ul>
-
-    </p>
-    <h3>Version Control System</h3>
-    <p>Before preceding, lets find out what actually is VCS and what is Git?</p>
-    <p>Simply put, version control system allows you to maintain and manage different versions of files. It is sort of a 
-       time machine. Yes!, you read it right. Once you master the VCS you will be able to travel in time. You will be able
-       to see what your files looked like in the past. You will be maintaining different versions for your future self. 
-       Is not it fun? So, fasten your seat belts.</p>
-    
-    <h3>Git and Github</h3>
-    <p>There are many Version Control Systems out there. Git is one of them. So, Git is a Version Control System. It lets
-       you mantain different versions locally in your machine.<br>
-       Github is basically a cloud storage platform where you can store your files in repositries. You can access them 
-       from anywhere in the world and from any machine in the world.</p>
-    <hr>
-    <h4>Installation Guide:</h3>
-    <h4>Github for Windows:</h4>
-    <a href="https://windows.github.com" target="_blank">https://windows.github.com</a>
-    <h4>Github for Mac:</h4>
-    <a href="https://mac.github.com" target="_blank">https://mac.github.com</a>
-    <p>Download the setup and install it on your computer.</p>
-    <p>After installing open command prompt or shell and type
-       <strong><br> git --version </strong></em>
-       <p>You will see the following result if the installation was successfull. Note: Your version might be different.</p> 
-    </p>
-    <img src="images/version.png">
-    <hr>
-    <p>Now that we have installed git, lets move towards learnin how to use it.</p>
-    <hr>
-    <h3>git init</h3>
-    <p>Open the folder that contains the files, you want to manage different versions of, inside the terminal and type
-       <br> <strong>git init</strong><br>
-        Executing this command will initialize that folder as a Git repository.
-        <br>
-    </p>
-    <img src="images/init1.png">
-    <img src="images/init2.png">
-   <hr>
-   <p>Now, suppose you are inside the repository. What will be the process? <br>
-      Have a look at the image below
+   <div class="inner-body">
+      <h1 class="center">Version Control System</h1>
+      <hr>
       <ul>
-         <li>Your working directory is the area where you will be working on the files.</li>
-         <li>Then you will add this file into staging area. Here it keeps track of the changes being made.</li>
-         <li>Then you will commit it and it's version will be stored in the local repository.</li>
+         <li><a href="#intro">Introduction</a></li>
+         <li><a href="#who">Who should use Git?</a></li>
+         <li><a href="#git">Git and GitHub</a></li>
+         <li><a href="#guide">Installation Guide</a></li>
+         <li><a href="#version">git --version</a></li> 
+         <li><a href="#init">git init</a></li>
+         <li><a href="#concept">General Concept</a></li>
+         <li><a href="#status">git status</a></li>
+         <li><a href="#add">git add</a></li>
+         <li><a href="#commit">git commit</a></li>
+         <li><a href="#log">git log</a></li>
+         <li><a href="#checkout-commit">git checkout</a></li>
+         <li><a href="#branches">Branches</a></li>
+         <li><a href="#git-branch">git branch</a></li>
+         <li><a href="#GitHub">GitHub</a></li>
+         <li><a href="#push">git push</a></li>
+         <li><a href="#pull">git pull</a></li>
+         <li><a href="#clone">git clone</a></li>
       </ul>
-   </p>
-   <img src="images/generalConcept.png">
-   <hr>
-   <h3>git status</h3>
-   <p>This command shows the files that are being tracked and that are not being tracked. <br>
-      For the files that are being tracked it also shows if any chnages have been made to them that are not 
-      yet saved in the local repository.</p>
-   <img src="images/status.png">
-   <hr>
-   <h3>git add</h3>
-   <p>Files can be added in the staging area using two ways
+      <img src="images/logo1.png" class="logo">
+      <hr>
+      <h3 id="intro">Introduction</h3>
+      <p>Before preceding, lets find out what actually is Version Control System (VCS) and what is Git?</p>
+      <p>Simply put, version control system allows you to maintain and manage different versions of the files. It is
+         sort of
+         a
+         time machine. Yes!, you read it right. Once you master the VCS you will be able to travel in time. You will be
+         able to see what your files looked like in the past. You will be maintaining different versions of files or
+         project for your future self.
+         Is not it fun? So, fasten your seat belts.</p>
+
+      <h3 id="who">Who should use Git?</h3>
+      <p>You do not have to be a programmer to use Git. Anyone who works on projects and wants to maintain its different
+         versions, can use <br>
+         You may be
       <ul>
-         <li>Add a single file</li>
-         <li>Add all files at once</li>
+         <li>A writer who writes stories or books.</li>
+         <li>A programmer </li>
+         <li>A Student</li>
+         <li>or Anyone</li>
       </ul>
-      <br> <strong>git add [file name]</strong><br>
-      adds the single file into staging area.
-      <br>
-   </p>
-   <img src="images/add1.png">
-   <p>
-      <br> <strong>git add .</strong><br>
-      adds all the files and subdirectories in current directory to staging area. 
-      <br></p>
-      <img src="images/add2.png">
-   <p>Now both files are being tracked <br>
-      Lets make some changes in the files</p>
-   <img src="images/change1.png">
-   <img src="images/change1Commit.png">
 
-   <h3>git commit</h3>
-   <p>This command will move all the files in the staging area to local repository. It means it will store the current 
-      version.
-      <br> <strong>git commit -m message</strong><br>
-      Message is a note which will help you remember what change you made in this commit.
-      <br>
-   </p>
-   <img src="images/spring.png">
-   <p>Lets make some changes and commit them.</p>
-   <img src="images/change2.png">
-   <br>
-   <img src="images/change2Commit.png">
-   <br>
-   <img src="images/change3.png">
-   <br>
-   <img src="images/change3Commit.png">   
-<hr>
-<h3>git log</h3>
-<p>This command shows the track of commit. It shows when the commit was made, who made the commit and commit message. 
-   <br>
-   <img src="images/log.png">   
-</p>
+      <h3 id="git">Git and Github</h3>
+      <p>There are many Version Control Systems out there. Git is one of them. So, <strong>Git</strong> is basically a
+         Version Control
+         System. It lets you mantain different versions locally on your machine.<br>
+         <strong>GitHub</strong> is a cloud storage platform where you can store your files in online repositries. You
+         can access them
+         from anywhere in the world and from any machine in the world.
+      </p>
+      <hr>
+      <h3 id="guide">Installation Guide:</h3>
+         <table>
+            <tr>
+               <td style="padding:5px"><strong>Github for Windows:</strong></td>
+               <td style="padding:5px"><a href="https://windows.github.com" target="_blank">https://windows.github.com</a></td>
+            </tr>
+            <td style="padding:5px"><strong>Github for Mac:</strong></td>
+            <td style="padding:5px"><a href="https://mac.github.com" target="_blank">https://mac.github.com</a></td>
+         </table>
+         <p>Download the setup and install it on your computer.</p>
+         <p>After installing open command prompt or shell and type</p>
+         <h3 id="version"> git --version </h3>
+         <p>You will see the following result if the installation was successfull. <br> Note: Your version might be
+            different.</p>
+         <img src="images/version.png" class="img">
+         <hr>
+         <p>Now that we have installed git, lets move towards learnin how to use it.</p>
+         <h3 id="init">git init</h3>
+         <p>Open the folder that contains the files, you want to manage different versions of, inside the terminal and
+            type
+            <br> <strong>git init</strong><br>
+            Executing this command will initialize that folder as a Git repository.
+            <br>
+         </p>
+         <img src="images/init1.png" class="img">
+         <img src="images/init2.png" class="img">
+         <hr>
+         <h3 id="concept">General Concept</h3>
+         <p>Now, suppose you are inside the repository. What will be the process? <br>
+            Have a look at the image below
+         <ul>
+            <li>Your working directory is the area where you will be working on the files.</li>
+            <li>Then you will add this file into staging area. Here it keeps track of the changes being made.</li>
+            <li>Then you will commit it and it's version will be stored in the local repository.</li>
+         </ul>
+         </p>
+         <img src="images/concept.png" class="img">
+         <hr>
+         <h3 id="status">git status</h3>
+         <p>This command shows the files that are being tracked and that are not being tracked. <br>
+            For the files that are being tracked it also shows if any chnages have been made to them that are not
+            yet saved in the local repository.</p>
+         <img src="images/status.png" class="img">
+         <hr>
+         <h3 id="add">git add</h3>
+         <p>Files can be added in the staging area using two ways
+         <ul>
+            <li>Add a single file</li>
+            <li>Add all files at once</li>
+         </ul>
+         <br> <strong>git add [file name]</strong><br>
+         adds the single file into staging area.
+         <br>
+         </p>
+         <img src="images/add1.png" class="img">
+         <p>
+            <br> <strong>git add .</strong><br>
+            adds all the files and subdirectories in current directory to staging area.
+            <br>
+         </p>
+         <img src="images/add2.png" class="img">
+         <br>
+         <p>Now both files are being tracked <br>
+            Lets make some changes in the files</p>
+         <img src="images/change1.png" class="img">
+         <img src="images/change1Commit.png" class="img">
+         <br>
+         <h3 id="commit">git commit</h3>
+         <p>This command will move all the files in the staging area to local repository. It means it will store the
+            current
+            version.
+            <br> <strong>git commit -m message</strong><br>
+            Message is a note which will help you remember what change you made in this commit.
+            <br>
+         </p>
+         <img src="images/spring.png" class="img">
+         <p>Lets make some changes and commit them.</p>
+         <img src="images/change2.png" class="img">
+         <img src="images/change2Commit.png" class="img">
+         <img src="images/change3.png" class="img">
+         <img src="images/change3Commit.png" class="img">
+         <hr>
+         <h3 id="log">git log</h3>
+         <p>This command shows the track of commit. It shows when the commit was made, who made the commit and commit
+            message.
+            <br>
+            <img src="images/log.png" class="img">
+         </p>
 
-<p>Let say we want se how our directory looked at first commit.
-    <br>
-   For this we would have to copy the hash code of the commit and type
-   <br><Strong>git checkout "commit hash code" </Strong>
-   </p>
-   <img src="images/checkout1.png">   
-   <img src="images/checkout2.png">   
-   <p>To swicth back to recent state, type
-   <br><Strong>git checkout master </Strong>
-   </p>
-   <img src="images/switchBack1.png">   
-   <img src="images/switchback2.png">   
+         <p>Let say we want se how our directory looked at first commit.
+            <br>
+            For this we would have to copy the hash code of the commit and type
+            <br>
+            <h3 id="checkout-commit">git checkout "commit hash code" </h3>
+         </p>
+         <img src="images/checkout1.png" class="img">
+         <img src="images/checkout2.png" class="img">
+         <p>To swicth back to recent state, type
+            <h3>git checkout master </h3>
+         </p>
+         <img src="images/switchBack1.png" class="img">
+         <img src="images/switchback2.png" class="img">
 
-   <hr>
-   <h3>Lets learn about branches now. What are branches?</h3>
-   <p>Branches enables you to make changes in the project without affecting the existing
-      project. Sometimes you make some changes and those chnages create turbulence in the project. So, your prject becomes 
-      unstable. The only way now is to revert back but how can we do that. We will have to remember how it looked like back 
-      then. Git branches makes it way more easier for you.
-      Master branch is the main branch. Whenever you want to make changes to your project that might make it unstable, create
-      a branch. It copy all the files in that branch. So basically it generated a copy of the project. You can make changes
-      in it. Whenever you think that the changes are sable you can merge the both branches otherwise you can simply switch 
-      to previous branch.
-   </p>
-   <img src="images/branch.png"> 
-   <h3>git branch</h3>
-   <p>It tells you which branch you are on. </p>
-   <br>
-   <img src="images/branch1.png">  
-   
-   <h3>git branch [branch-name]</h3>
-   <p>It will create a new branch with the specified name.</p>
-      <br>
-      <img src="images/branch2.png"> 
+         <hr>
+         <h3 id="branches">Lets learn about branches now. What are branches?</h3>
+         <p>Branches enables you to make changes in the project without affecting the existing
+            project. Sometimes you make some changes and those chnages create turbulence in the project. So, your prject
+            becomes
+            unstable. The only way now is to revert back but how can we do that. We will have to remember how it looked
+            like back
+            then. Git branches makes it way more easier for you.
+            Master branch is the main branch. Whenever you want to make changes to your project that might make it
+            unstable, create
+            a branch. It copy all the files in that branch. So basically it generated a copy of the project. You can
+            make changes
+            in it. Whenever you think that the changes are sable you can merge the both branches otherwise you can
+            simply switch
+            to previous branch.
+         </p>
+         <img src="images/branch.png" class="img">
+         <h3 id="git-branch">git branch</h3>
+         <p>It tells you which branch you are on. </p>
+         <br>
+         <img src="images/branch1.png" class="img">
 
-   <h3>git checkout [branch-name]</h3>
-   <p>Switches to the branch specified.</p>
-      <br>
-      <img src="images/branch3.png"> 
-         
+         <h3>git branch [branch-name]</h3>
+         <p>It will create a new branch with the specified name.</p>
+         <br>
+         <img src="images/branch2.png" class="img">
 
-   <hr>
-   <h2>GitHub</h2>
-   <p>Now, that we have leanred git lets move on to GitHub. 
-      <br>
-      GitHub is a cloud storag platform, where you can store your repositries and can access them from anywhere.
-      <br>
-      <a href="https://github.com/">github.com</a>
-      <br>
-      Open the above link and create your account on GitHub. <br>
-      Click on new for creating a new repository.
-      <img src="images/githubRepo1.png">
-      <br>
-      Enter the name and description and click create repository.
-      <img src="images/githubRepo2.png">
-      <br>
-      Follow these instructions to upload your local repository to GitHub.
-   </p>
-   <img src="images/githubRepo3.png" >
-   <br><br>
-   <img src="images/githubRepo4.png" >
-   <br><br>
-   <img src="images/githubRepo5.png" >
-   <br>
-   <p>You can see that our repository is uploaded.</p>
-   <br>
-   <img src="images/githubRepo6.png" >
-   <br>
-   <p>You can also view commits.</p><br>
-   <img src="images/githubRepo7.png" >
-   <h3>How to download an existing GitHub repoitory on you local machine?</h3>
-   <p>
-      <ul>
-         <li>Move to the directory you want to clone the repository in.</li>
-         <li>Open Terminal and Enter following commands</li>
-         <li>git init</li>
-         <li>git clone [url of repository]</li>
-      </ul>
-   </p>
-   <img src="images/clone1.png" >
-   <br><br>
-   <img src="images/clone2.png" >
-   <br><br>
-   <img src="images/clone3.png" >
-   <hr>
-   <p>Suppose I or someone make changes in repsoitory on GitHub. How will my local repository gets updated?</p>
-   <h3>git pull</h3>
-   <p>It will update the local repsoitory.</p>
-   <br><br>
-   <img src="images/pull1.png" >
-   <br><br>
-   <img src="images/pull2.png" >
-   <br><br>
-   <img src="images/pull3.png" >
-   <br><br>
-   <img src="images/pull4.png" >
-   <br><br>
-   <img src="images/pull5.png" >
+         <h3>git checkout [branch-name]</h3>
+         <p>Switches to the branch specified.</p>
+         <br>
+         <img src="images/branch3.png" class="img"> 
+
+
+         <hr>
+         <h2 id="GitHub">GitHub</h2>
+         <p>Now, that we have leanred git lets move on to GitHub.
+            <br>
+            GitHub is a cloud storag platform, where you can store your repositries and can access them from anywhere.
+            <br>
+            <a href="https://github.com/" >github.com</a>
+            <br>
+            Open the above link and create your account on GitHub. <br>
+            Click on new for creating a new repository.
+         </p>
+            <img src="images/githubRepo1.png" class="img">
+            <p>Enter the name and description and click create repository.</p>
+            <img src="images/githubRepo2.png" class="img">
+            <p>Follow these instructions to upload your local repository to GitHub.</p>
+
+         <img src="images/githubRepo3.png" class="img">
+         <br><br>
+         <img src="images/githubRepo4.png" class="img">
+         <br><br>
+         <img src="images/githubRepo5.png" class="img">
+         <br>
+         <p>You can see that our repository is uploaded.</p>
+         <br>
+         <img src="images/githubRepo6.png" class="img">
+         <br>
+         <p>You can also view commits.</p><br>
+         <img src="images/githubRepo7.png" class="img">
+         <hr>
+         <h3>How to download an existing GitHub repoitory on you local machine?</h3>
+         <h3 id="clone">git clone</h3>
+         <p>
+         <ul>
+            <li>Move to the directory you want to clone the repository in.</li>
+            <li>Open Terminal and Enter following commands</li>
+            <li>git init</li>
+            <li>git clone [url of repository]</li>
+         </ul>
+         </p>
+         <img src="images/clone1.png" class="img">
+         <br><br>
+         <img src="images/clone2.png" class="img">
+         <br><br>
+         <img src="images/clone3.png" class="img">
+         <br>
+         <br>
+         <h3 id="pull">git push</h3>
+         <p>As you have seen in the above snaphost, it lets you upload the local repository to online repository
+            on GitHub.
+         </p>
+         <hr>
+         <p>Suppose I or someone make changes in repsoitory on GitHub. How will my local repository gets updated?</p>
+         <h3 id="pull">git pull</h3>
+         <p>It will update the local repsoitory.</p>
+         <br><br>
+         <img src="images/pull1.png" class="img">
+         <br><br>
+         <img src="images/pull2.png" class="img">
+         <br><br>
+         <img src="images/pull3.png" class="img">
+         <br><br>
+         <img src="images/pull4.png" class="img">
+         <br><br>
+         <img src="images/pull5.png" class="img">
+         <br>
+         <hr>
+   </div>
 </body>
+
 </html>
